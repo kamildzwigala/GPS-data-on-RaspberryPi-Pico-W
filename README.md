@@ -68,7 +68,8 @@ sudo nano /opt/traccar/conf/traccar.xml
 
 
 delete:
-    \<entry key='database.driver'>org.h2.Driver</entry>
+    
+    <entry key='database.driver'>org.h2.Driver</entry>
     
     <entry key='database.url'>jdbc:h2:./data/database</entry>
     
@@ -78,7 +79,8 @@ delete:
     
 
 paste:
-    \<entry key='database.driver'>org.postgresql.Driver</entry>
+    
+    <entry key='database.driver'>org.postgresql.Driver</entry>
     
     <entry key='database.url'>jdbc:postgresql://127.0.0.1:5432/traccar</entry>
     
