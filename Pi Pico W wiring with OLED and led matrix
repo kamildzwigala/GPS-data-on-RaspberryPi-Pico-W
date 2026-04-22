@@ -1,0 +1,26 @@
+RASPBERRYPI PICO W wiring:
+
+Step 1: Connection diagram (Wiring)
+
+Before we write the code, we need to combine it all. We will use the I2C bus for the OLED display and one digital pin for the LED matrix.
+
+Power Supply (Common):
+
+Display OLED and matrix WS2812B need power.
+
+Pico W Pin 36 (3V3 OUT) -> VCC display OLED.
+
+Pico W Pin 40 (VBUS) -> VCC (5V) matrix LED. (Matrix WS2812B Works on 5V. Pin VBUS hale 5V from USB Cable. The control signal from Pico will have 3.3V).
+
+Pico W Pin 38 (GND) -> GND display OLED and GND matrix LED. (All GND must be connected to each other).
+
+Display OLED (I2C):
+
+Pico W Pin 6 (GP4) -> SDA on OLED.
+
+Pico W Pin 7 (GP5) -> SCL on OLED.
+
+Matrix LED WS2812B (Signal):
+
+Pico W Pin 4 (GP2) -> DIN (Data IN) on matrix LED.
+
