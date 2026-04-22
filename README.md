@@ -21,6 +21,7 @@ sudo systemctl enable traccar
 
 
 -You need to open ports on you VPS Server (8082,5023,5013,3000,22), and run it in iptables:
+
 sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 8082 -j ACCEPT
 
 sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 5023 -j ACCEPT
@@ -67,23 +68,23 @@ sudo nano /opt/traccar/conf/traccar.xml
 
 
 delete:
-    <entry key='database.driver'>org.h2.Driver</entry>
+#    <entry key='database.driver'>org.h2.Driver</entry>
     
-    <entry key='database.url'>jdbc:h2:./data/database</entry>
+#    <entry key='database.url'>jdbc:h2:./data/database</entry>
     
-    <entry key='database.user'>sa</entry>
+#    <entry key='database.user'>sa</entry>
     
-    <entry key='database.password'></entry>
+#    <entry key='database.password'></entry>
     
 
 paste:
-    <entry key='database.driver'>org.postgresql.Driver</entry>
+#    <entry key='database.driver'>org.postgresql.Driver</entry>
     
-    <entry key='database.url'>jdbc:postgresql://127.0.0.1:5432/traccar</entry>
+#    <entry key='database.url'>jdbc:postgresql://127.0.0.1:5432/traccar</entry>
     
-    <entry key='database.user'>traccar</entry>
+#    <entry key='database.user'>traccar</entry>
     
-    <entry key='database.password'>yourpassword</entry>
+#    <entry key='database.password'>yourpassword</entry>
     
 
 for ignore NULL ISLAND:
