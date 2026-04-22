@@ -7,4 +7,5 @@ thonny.org
 
 save files .py and .json on Pico W, and start main.py
 
-You should see 
+You should see "1.Connect to picosetup: password"
+or you can paste your wifi and password and home coordinates to .json
