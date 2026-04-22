@@ -68,23 +68,23 @@ sudo nano /opt/traccar/conf/traccar.xml
 
 
 delete:
-#    <entry key='database.driver'>org.h2.Driver</entry>
+    \<entry key='database.driver'>org.h2.Driver</entry>
     
-#    <entry key='database.url'>jdbc:h2:./data/database</entry>
+    <entry key='database.url'>jdbc:h2:./data/database</entry>
     
-#    <entry key='database.user'>sa</entry>
+    <entry key='database.user'>sa</entry>
     
-#    <entry key='database.password'></entry>
+    <entry key='database.password'></entry>
     
 
 paste:
-#    <entry key='database.driver'>org.postgresql.Driver</entry>
+    \<entry key='database.driver'>org.postgresql.Driver</entry>
     
-#    <entry key='database.url'>jdbc:postgresql://127.0.0.1:5432/traccar</entry>
+    <entry key='database.url'>jdbc:postgresql://127.0.0.1:5432/traccar</entry>
     
-#    <entry key='database.user'>traccar</entry>
+    <entry key='database.user'>traccar</entry>
     
-#    <entry key='database.password'>yourpassword</entry>
+    <entry key='database.password'>yourpassword</entry>
     
 
 for ignore NULL ISLAND:
