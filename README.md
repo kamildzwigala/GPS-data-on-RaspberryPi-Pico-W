@@ -255,3 +255,4 @@ pm2 save
 pm2 startup
 
 
+-You can configure any GPS to work with TRACCAR, or use app on smarphone TRACCAR CLIENT
