@@ -111,9 +111,9 @@ def connect_wifi_or_setup():
         show_frame(ICON_WIFI)
         oled.fill(0)
         oled.text("--- SETUP ---", 16, 0)
-        oled.text("1.Polacz z WiFi:", 0, 16)
-        oled.text("Pico_Radar_Setup", 0, 26)
-        oled.text("2.Wejdz na IP:", 0, 42)
+        oled.text("1.Connect to WiFi:", 0, 16)
+        oled.text("picosetup: password", 0, 26)
+        oled.text("2.Go to:", 0, 42)
         oled.text("192.168.4.1", 0, 52)
         oled.show()
         import setup_server
